@@ -16,7 +16,7 @@ else
 {
     
 
-    if (Filename.Contains("."))
+    if (Filename.Contains('.'))
     {
         if (!File.Exists(Filename))
         {

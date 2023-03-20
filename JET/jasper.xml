@@ -1,1 +1,159 @@
-jasper.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<nga:ProcessPayServEmp xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+                      xmlns:nga="http://www.ngahr.com/ngapexxml/1"
+                      xmlns:hr="http://www.hr-xml.org/3"
+                      xmlns:oa="http://www.openapplications.org/oagis/9"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      releaseID="1.31"
+                      languageCode="en-US">
+ <oa:ApplicationArea>
+     <oa:Sender>
+        <oa:LogicalID>Z01-US001-1001</oa:LogicalID>
+        <oa:ComponentID>akzonobelsP2</oa:ComponentID>
+        <oa:ConfirmationCode>Always</oa:ConfirmationCode>
+     </oa:Sender>
+ </oa:ApplicationArea>
+ <nga:DataArea>
+     <oa:Process>
+        <oa:ActionCriteria>
+           <oa:ActionExpression actionCode="ADD"/>
+        </oa:ActionCriteria>
+     </oa:Process>
+     <nga:PayServEmp>
+        <hr:IndicativeData>
+           <hr:IndicativePersonDossier>
+              <hr:IndicativePerson validFrom="2020-02-01" validTo="9999-12-31">
+                 <hr:PersonID>00080157</hr:PersonID>
+                 <hr:PersonName>
+                    <hr:FormattedName>John Doe</hr:FormattedName>
+                    <oa:GivenName>John</oa:GivenName>
+                    <hr:FamilyName>Doe</hr:FamilyName>
+                    <hr:FormerFamilyName>Doe</hr:FormerFamilyName>
+                    <hr:PreferredSalutationCode>Mr.</hr:PreferredSalutationCode>
+                    <hr:PersonNameInitials>JJ</hr:PersonNameInitials>
+                 </hr:PersonName>
+                 <hr:BirthDate>1982-11-15</hr:BirthDate>
+                 <hr:GenderCode>Male</hr:GenderCode>
+                 <hr:CitizenshipCountryCode>FR</hr:CitizenshipCountryCode>
+              </hr:IndicativePerson>
+              <hr:IndicativePerson validFrom="2020-02-01" validTo="9999-12-31">
+                 <hr:Communication>
+                    <hr:Address validFrom="2020-02-01" validTo="9999-12-31" type="home">
+                                                                                     <oa:BuildingNumber>31</oa:BuildingNumber>
+                       <oa:StreetName>Rijksstraatweg</oa:StreetName>
+                       <oa:CityName>Sassenheim</oa:CityName>
+                       <hr:CountryCode>NL</hr:CountryCode>
+                       <oa:PostalCode>2171 AJ</oa:PostalCode>
+                    </hr:Address>
+                 </hr:Communication>
+
+              </hr:IndicativePerson>
+              <hr:IndicativePerson validFrom="2020-02-01" validTo="9999-12-31">
+                 <hr:Communication>
+                    <hr:ChannelCode>Email</hr:ChannelCode>
+                    <hr:UseCode>Business</hr:UseCode>
+                    <oa:URI>jeremy.Doe@akzonobel.com</oa:URI>
+                 </hr:Communication>
+              </hr:IndicativePerson>
+              <hr:IndicativePerson validFrom="2020-02-01" validTo="9999-12-31">
+                 <hr:PersonLegalID schemeName="NL-BSN">347974533</hr:PersonLegalID>
+              </hr:IndicativePerson>
+              <hr:IndicativeEmployee validFrom="2020-02-01" validTo="9999-12-31">
+                 <hr:EmployeeID>50080157</hr:EmployeeID>
+                 <hr:EmployeeGroupCode>3-3</hr:EmployeeGroupCode>
+              </hr:IndicativeEmployee>
+              <hr:IndicativeEmployment>
+                 <hr:EmploymentLifecycle>
+                    <hr:Hire>
+                       <hr:HireTypeCode>HIRNEW</hr:HireTypeCode>
+                       <hr:HireDate>2020-02-01</hr:HireDate>
+                    </hr:Hire>
+                 </hr:EmploymentLifecycle>
+              </hr:IndicativeEmployment>
+              <hr:IndicativeDeployment validFrom="2020-02-01" validTo="9999-12-31">
+                 <hr:DeploymentOrganization>
+                    <hr:OrganizationIdentifiers>
+                       <hr:OrganizationID>1393</hr:OrganizationID>
+                    </hr:OrganizationIdentifiers>
+                    <hr:OrganizationalIdentifiers>
+                       <hr:OrganizationalName>COOP Tinting</hr:OrganizationalName>
+                    </hr:OrganizationalIdentifiers>
+                 </hr:DeploymentOrganization>
+                 <hr:WorkLocation>
+                    <hr:LocationID>NLSAS00A</hr:LocationID>
+                    <hr:Address>
+                       <oa:CityName>Sassenheim</oa:CityName>
+                       <hr:CountryCode>NL</hr:CountryCode>
+                    </hr:Address>
+                 </hr:WorkLocation>
+                 <hr:Job>
+                    <oa:JobTitle>(Technical) Customer Support - 1</oa:JobTitle>
+                 </hr:Job>
+                 <hr:IndicativePosition>
+                    <hr:PositionTitle>Software Manager Tinting</hr:PositionTitle>
+                 </hr:IndicativePosition>
+                 <hr:Schedule>
+                    <hr:DaySchedule>
+                       <hr:ID>NLD-SHIFT-DY</hr:ID>
+                    </hr:DaySchedule>
+                 </hr:Schedule>
+                 <hr:FullTimeEquivalentRatio>1.0</hr:FullTimeEquivalentRatio>
+              </hr:IndicativeDeployment>
+              <hr:PayCycleRemuneration validFrom="2020-02-01" validTo="9999-12-31">
+                 <hr:PayGroupCode>N0</hr:PayGroupCode>
+              </hr:PayCycleRemuneration>
+           </hr:IndicativePersonDossier>
+        </hr:IndicativeData>
+        <nga:PayServEmpExtension>
+           <nga:CostAssignment validFrom="2020-02-01" validTo="9999-12-31">
+              <nga:CostCenterCode>1393_NL2150007</nga:CostCenterCode>
+              <oa:Percentage>100</oa:Percentage>
+           </nga:CostAssignment>
+          <nga:PayScales validFrom="2020-02-01" validTo="9999-12-31">
+              <nga:PayScaleType>NLD/07NLD/Z3</nga:PayScaleType>
+              <nga:PayScaleGroup>NLD/07/Z3/56D</nga:PayScaleGroup>
+              <nga:PayScaleLevel>NLD/07/Z3/56D/01</nga:PayScaleLevel>
+           </nga:PayScales>
+           <nga:DateSpecifications>
+              <nga:Date DateType="SeniorityDate">2020-02-01</nga:Date>
+           </nga:DateSpecifications>
+           <nga:Approvers>
+              <nga:Approver Type="GENERAL">00012686</nga:Approver>
+           </nga:Approvers>
+           <nga:ContractElements validFrom="2020-02-01" validTo="9999-12-31">
+              <nga:ContractType>NLD-05</nga:ContractType>
+              <nga:ContractEndDate>9999-12-31</nga:ContractEndDate>
+           </nga:ContractElements>
+           <nga:AlternateDescriptions validFrom="2020-02-01" validTo="9999-12-31">
+              <nga:Description Type="HireReason">HI0EV03</nga:Description>
+           </nga:AlternateDescriptions>
+        </nga:PayServEmpExtension>
+        <nga:PayServEmpPayElements>
+           <nga:PayElement validFrom="2020-02-01" validTo="9999-12-31">
+              <hr:ID>1000</hr:ID>
+              <nga:PayElementType>RECURRING</nga:PayElementType>
+              <nga:Amount>42927.0</nga:Amount>
+              <hr:CurrencyCode>EUR</hr:CurrencyCode>
+           </nga:PayElement>
+           <nga:PayElement validFrom="2020-02-01" validTo="9999-12-31">
+              <hr:ID>1001</hr:ID>
+              <nga:PayElementType>RECURRING</nga:PayElementType>
+              <nga:Amount>42927.0</nga:Amount>
+              <hr:CurrencyCode>EUR</hr:CurrencyCode>
+           </nga:PayElement>
+           <nga:PayElement validFrom="2020-02-01" validTo="9999-12-31">
+              <hr:ID>1020</hr:ID>
+              <nga:PayElementType>RECURRING</nga:PayElementType>
+              <nga:Amount>0.0</nga:Amount>
+              <hr:CurrencyCode>EUR</hr:CurrencyCode>
+           </nga:PayElement>
+           <nga:PayElement validFrom="2020-02-01" validTo="9999-12-31">
+              <hr:ID>Annual</hr:ID>
+              <nga:PayElementType>RECURRING</nga:PayElementType>
+              <nga:Amount>42927.0</nga:Amount>
+              <hr:CurrencyCode>EUR</hr:CurrencyCode>
+           </nga:PayElement>
+        </nga:PayServEmpPayElements>
+     </nga:PayServEmp>
+ </nga:DataArea>
+</nga:ProcessPayServEmp>
